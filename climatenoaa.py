@@ -14,7 +14,7 @@ import plotly.express as px
 from prophet import Prophet
 
 # Cargar archivo local
-file_path = "/mnt/FI000000304.csv"
+file_path = "FI000000304.csv"
 
 df = pd.read_csv(file_path)
 
@@ -131,7 +131,7 @@ fig.show()
 
 
 
-file_path2 = "/mnt/DA000030380.csv"
+file_path2 = "DA000030380.csv"
 df2 = pd.read_csv(file_path2)
 
 df2["TMAX_C"] = df2["TMAX"] / 10.0

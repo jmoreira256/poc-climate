@@ -7,9 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1M9K-BPDzItlBIPd5JAd_jE33eptqSkO7
 """
 
-!pip install prophet plotly
-
+import streamlit as st
 import pandas as pd
+import numpy as np
+import plotly.express as px
+from prophet import Prophet
 
 # Cargar archivo local
 file_path = "/mnt/FI000000304.csv"
